@@ -1,4 +1,4 @@
-import SectionSvg from '../assets/svg/SectionSvg';
+import SectionSvg from "../assets/svg/SectionSvg";
 
 const Section = ({
   className,
@@ -8,7 +8,7 @@ const Section = ({
   customPaddings,
   children,
 }) => {
-  return;
+  return (
   <div
     id={id}
     className={`relative ${
@@ -25,11 +25,16 @@ const Section = ({
 
     {crosses && (
       <>
-        <div className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1 ${crossesOffset && crosses} pointer-events-none lg:block xl;left-10 right-10`}></div>
-        <SectionSvg crossesOffset={crossesOffset} ></SectionSvg>
+        <div
+          className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1 ${
+            crossesOffset && crosses
+          } pointer-events-none lg:block xl;left-10 right-10`}
+        ></div>
+        <SectionSvg crossesOffset={crossesOffset}></SectionSvg>
       </>
     )}
-  </div>;
+  </div>
+  );
 };
 
 export default Section;
