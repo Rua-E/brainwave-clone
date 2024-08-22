@@ -1,5 +1,8 @@
 import { smallSphere, stars } from "../assets";
+import { LeftLine, RightLine } from "./design/Pricing";
+
 import Heading from "./Heading";
+import PricingList from "./PricingList";
 import Section from "./Section";
 
 const Pricing = () => {
@@ -29,7 +32,9 @@ const Pricing = () => {
           title="Pay once, use forever"
         ></Heading>
         <div className="relative">
-            
+            <PricingList></PricingList>
+            <LeftLine></LeftLine>
+            <RightLine></RightLine>
         </div>
       </div>
     </Section>
